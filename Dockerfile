@@ -86,6 +86,6 @@ WORKDIR /var/www/wallabag
 
 HEALTHCHECK CMD curl --fail --silent --show-error --user-agent healthcheck http://localhost/api/info || exit 1
 
-EXPOSE 80
+EXPOSE 8081
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["wallabag"]
